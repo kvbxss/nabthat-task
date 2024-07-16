@@ -1,0 +1,10 @@
+<footer>
+  <div class="css-is-awesome">
+    <p>CSS <br />IS <br />AWESOME</p>
+  </div>
+  <button (click)="showOptions()">Pokaż</button>
+  <div *ngIf="optionsVisible" class="options">
+    <button (click)="resetPage()">Zresetuj ustawienia</button>
+    <button (click)="appendName()">Pokaż dane osobowe</button>
+  </div>
+</footer>

@@ -1,0 +1,53 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  max-height: fit-content;
+  background: #161616;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  left: 0;
+  z-index: 1000;
+
+  a {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    img {
+      height: 60px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+    &:hover img {
+      filter: none;
+    }
+
+    &:hover + div {
+      display: flex;
+      flex-direction: column;
+      font-size: 2rem;
+      padding-right: 2rem;
+      line-height: 0%;
+    }
+    &:hover + div p:last-child {
+      position: relative;
+      opacity: 1;
+    }
+  }
+
+  div {
+    font-size: 2rem;
+    justify-content: end;
+    display: flex;
+    padding-right: 2rem;
+    flex-direction: row;
+    text-align: end;
+
+    p:last-child {
+      position: absolute;
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.block {
+  padding: 1rem;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    align-items: start;
+  }
+
+  .content {
+    text-align: center;
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 960px) {
+  .block {
+    flex-direction: column;
+  }
+
+  .content {
+    text-align: left;
+  }
+}

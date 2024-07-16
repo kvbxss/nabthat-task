@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+/* Variables */
+$primary-color: #292c35;
+$text-color: #fff;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: #292c35;
+  color: white;
+}

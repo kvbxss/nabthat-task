@@ -1,0 +1,88 @@
+footer {
+  background: #161616;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100vw;
+  align-items: center;
+
+  button {
+    margin: 0 5px;
+    padding: 0.7rem 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #292c35;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    color: rgb(209, 203, 203);
+    cursor: pointer;
+    height: fit-content;
+    margin-right: 2rem;
+
+    &:hover {
+      background: #666;
+    }
+  }
+
+  .options {
+    position: absolute;
+    bottom: 8rem;
+    right: 10px;
+    padding: 0.5rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    button {
+      margin: 0 5px;
+      padding: 0.7rem 3rem;
+      font-size: 1rem;
+      font-weight: bold;
+      background: #292c35;
+      border: 1px solid white;
+      border-radius: 0.5rem;
+      color: rgb(209, 203, 203);
+      cursor: pointer;
+
+      &:hover {
+        background: #666;
+      }
+    }
+  }
+
+  .css-is-awesome {
+    position: relative;
+    text-align: start;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    margin: 1rem;
+    transition: transform 0.5s;
+
+    p {
+      font-size: 1.2rem;
+      text-wrap: nowrap;
+      margin: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid white;
+        transition: transform 0.5s ease;
+      }
+
+      &:hover::before {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
